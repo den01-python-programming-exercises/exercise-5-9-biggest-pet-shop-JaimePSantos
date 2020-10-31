@@ -1,11 +1,9 @@
 import pytest
 import os
-
+from src.pet import Pet
+from src.person import Person
 def test_exercise():
     os.chdir('src')
-
-    from pet import Pet
-    from person import Person
     lucky = Pet("Lucky", "collie")
     james = Person("James", lucky)
 
